@@ -1,5 +1,7 @@
 FROM ubuntu:14.04
 
+RUN apt-get update
+
 # Java 8
 RUN apt-get install -y software-properties-common \
       && apt-add-repository -y ppa:webupd8team/java \
